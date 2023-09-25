@@ -9,12 +9,14 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="./css/style.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +26,40 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Customize with Bonnie</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div class="main-container">
+      <div class="sidebar">
+        <a href="./main-page/index.html" class="back"> <i class="fa fa-arrow-left"></i> Go back</a>
+        <h2 class="name">Bonnie</h2>
+        <p class="description">This is our premium assitant Bonnie, she can help you customize and book your reservation</p>
+        <div class="events">
+          <h3 class="even">Events</h3>
+          <p class="even"> <i class="fa fa-calendar"></i>SF </p>
+          <p class="even"> <i class="fa fa-calendar"></i>Office</p>
+          <p class="even"> <i class="fa fa-calendar"></i>Offsite</p>
+          <p class="even"> <i class="fa fa-calendar"></i>Oakland HQ</p>
+          <p class="even"> <i class="fa fa-plus"></i>New</p>
+        </div>
+        <div class="copy">
+          <p>Emily Arteaga </p>
+          <small class="copyr"> &copy; Copyright 2023, Bizly</small>
+        </div>
+      </div>
+      <div class="header">
+        <div class="first">
+          <h1 class="place">Nobu hotel</h1>
+          <button class="chat">Chat</button>
+          <button class="block">Block</button>
+          <button class="block">Guests</button>
+        </div>
+          <div class="second" id="root"></div>
+      </div>
+      
+    </div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

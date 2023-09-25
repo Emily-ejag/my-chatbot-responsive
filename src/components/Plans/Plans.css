@@ -1,0 +1,122 @@
+.picture-container{
+    display: flex;
+    /* flex-direction: row; */
+    height: auto;
+    width: 15%;
+    padding-left: 30px;
+        
+    /* width: 200px; */
+    /* height: 150px; */
+}
+.other-image{
+    width: 160px;
+    height: 120px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.row-image{
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: row; /* --- default  */
+    /* flex-direction: row-reverse; --- para que se pongan al reves el orden y al otro lado*/
+    /* flex-direction: column; --- para que se hagan columnas*/
+    /* flex-direction: column-reverse; --- columnas al reves*/
+}
+.col-image{
+    /* background-color: darkturquoise; */
+    padding: 0px;
+    /* color: white; */
+    margin: 0px;
+    flex: 1 1 100px;
+    border: 1px solid cadetblue;
+
+    /* border: 1px solid gainsboro; */
+    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 1); */
+}
+
+.options{
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: black;
+  margin-left: 10px;
+  /* border: 1px solid cadetblue; */
+}
+
+/* Hide the browser's default checkbox */
+.options input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  padding: 10px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.options:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.options input:checked ~ .checkmark {
+  background-color: cadetblue;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.options input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.options .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 3px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+planes{
+    padding: 10px 50px 10px 50px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    font-size: 0.5em;
+  }
+  planes:hover{
+    background-color: lightgray;
+    color: black;
+}

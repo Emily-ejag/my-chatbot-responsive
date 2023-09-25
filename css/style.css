@@ -1,0 +1,169 @@
+body{
+    background-color: gainsboro;
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    /* width: 1500px; */
+    height: auto;
+    justify-content: center;
+    align-self: center;
+
+}
+.header{
+    max-width: 700px;
+    width: 42%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5%;
+    margin-top: 20px;
+    height:auto;
+}
+.sidebar{
+    max-width: 300px;
+    width: 25%;
+    margin: 20px;
+    border: 1px solid gray;
+    background-color: rgb(137, 134, 134);
+    border-radius: 0.5%;
+    max-height: 1100px;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+}
+
+.chat{
+    margin-right: 5px;
+    margin-left: 200px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    
+}
+.chat:hover{
+    background-color: lightgray;
+    color: black;
+    border: 1px solid gray;
+}
+.place{
+    margin: 15px;
+}
+.block{
+    margin-right: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.block:hover{
+    background-color: lightgray;
+    color: white;
+}
+.name{
+    padding: 15px;
+}
+.events{
+    padding: 15px;
+}
+.copy{
+    justify-content: flex-end;
+    margin-top: 500px;
+}
+.copyr{
+    padding: 15px;
+    padding-top: 0px;
+    /* margin-left: 15px; */
+}
+.back{
+    padding: 15px;
+    display: flex;
+    color: rgb(209, 208, 208);
+    text-decoration: none;
+}
+.back:hover{
+    text-decoration: underline;
+}
+.name{
+    color: rgb(49, 49, 49);
+    padding: 15px;
+}
+.even{
+    color: rgb(49, 49, 49);
+}
+.description{
+    color: rgb(49, 49, 49);
+}
+
+/* Responsive */
+@media screen and (max-width:1050px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        max-height: auto;
+        width: 90%;
+        margin: 15px;
+    }
+    .sidebar{
+        height: 650px;
+        min-width: 90%;
+        margin: 15px;
+        /* flex-direction: column; */
+    }
+    .copy{
+        justify-content: flex-end;
+        /* margin-top: 550px; */
+        margin: 0px;
+    }
+    .copyr{
+        padding: 15px;
+        padding-top: 0px;
+        /* margin-left: 15px; */
+
+    }
+    .description{
+        max-width: 300px;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        min-width: 90%;
+        padding: 20px;
+
+    }
+    .place{
+        display: flex;
+        min-width: 90%;
+    }
+    .chat{
+        margin-right: 5px;
+        margin-left: 0px;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 5%;
+    }
+    .second{
+        /* display: flex; */
+        margin: 10px;
+    }
+    
+
+}

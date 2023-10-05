@@ -9,8 +9,8 @@ import Plans from "./components/Plans/Plans";
 import Date from "./components/Date/Date";
 
 const config = {
-    initialMessages: [createChatBotMessage('Hi I am Bonnie, I am here to help you customize your reservation through:', {widget:"buttons"}), createChatBotMessage('Let me know what are your plans')],
-    botName: "Bonnie",
+    initialMessages: [createChatBotMessage('Hi I am Emily, I am here to help you customize your reservation through:', {widget:"buttons"}), createChatBotMessage('Let me know what are your plans')],
+    botName: "Emily",
     customStyles: {
         botMessageBox: {
           backgroundColor: '#bababa',
